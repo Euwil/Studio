@@ -1,0 +1,20 @@
+.overlay-card {
+    position: relative;
+    overflow: hidden;
+  }
+  .overlay {
+    position: absolute;
+    transform: translatey(100%);
+    width: 100%;
+    top: 0;
+    right: 0;
+    height: 100%;
+    font-size: 18px;
+    letter-spacing: 0.03em;
+    color: #ffffff;
+    overflow: auto;
+    background: rgba(33, 150, 243, 0.9);
+    padding: 50px 20px;
+    transition: transform 250ms linear;
+    line-height: 1.5;
+  }

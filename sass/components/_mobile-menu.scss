@@ -1,0 +1,113 @@
+@media screen and (max-width: 767px) {
+    .mobile-menu {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: var(--main-color);
+        overflow: auto;
+        opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+        
+    
+        &__window {
+            position: relative;
+            padding-left: 25px;
+            padding-top: 48px;
+        padding-bottom: 48px;
+        }
+    
+        &__close-btn {
+            border: none;
+            top: 10px;
+            right: 15px;
+            position: absolute;
+            background-color: transparent;
+            padding: 0;
+            &:hover .mobile-menu__icon-close, &:focus .mobile-menu__icon-close {
+                fill: var(--accent-color)
+            }
+        }
+        &__icon-close {
+            width: 35px;
+            height: 35px;
+           
+        }
+        &.is-open {
+            opacity: 1;
+            visibility: visible;
+            pointer-events: auto;
+          }
+        &__nav-list {
+            margin-bottom: 302px;
+        }
+        &__nav-item {
+            margin-bottom: 35px;
+        }
+        &__nav-link {
+            font-weight: 500;
+            font-size: 40px;
+            letter-spacing: 0.02em;
+            color: var(--title-color);
+
+            &:hover, &:focus {
+                color: var(--accent-color);
+            }
+        }
+        &__contact-list {
+            margin-bottom: 64px;
+        }
+        &__contact-item:first-child {
+            margin-bottom: 32px;
+        }
+        &__phone-link {
+            color: var(--accent-color);
+            font-weight: 500;
+            font-size: 34px;
+            letter-spacing: 0.02em;
+            &:hover, &:focus {
+                color: var(--accent-color)
+            }
+        
+        }
+        &__email-link {
+            font-weight: 500;
+            font-size: 24px;
+            letter-spacing: 0.02em;
+            color: var(--text-color);
+            &:hover, &:focus {
+                color: var(--accent-color)
+            }
+        }
+        &__social-list {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        &__social-item {
+            margin-right: 10px;
+            padding-right: 10px;
+            border-right: 1px solid rgba(33, 33, 33, 0.2);
+            @media screen and (max-width: 345px) {
+                margin-bottom: 10px;
+            }
+        }
+        &__social-link {
+            font-weight: 500;
+            font-size: 18px;
+            color: var(--text-color);
+            letter-spacing: 0.02em;
+            color: var(--accent-color)
+
+            
+        }
+    }
+    
+
+}
+@media screen and (min-width: 768px) {
+    .mobile-menu {
+        display: none;
+    }
+}
