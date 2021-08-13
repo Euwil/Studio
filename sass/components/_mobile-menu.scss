@@ -5,6 +5,7 @@
         left: 0;
         width: 100vw;
         height: 100vh;
+        z-index: 500000;
         background-color: var(--main-color);
         overflow: auto;
         opacity: 0;
@@ -38,6 +39,7 @@
         &.is-open {
             opacity: 1;
             visibility: visible;
+            
             pointer-events: auto;
           }
         &__nav-list {
